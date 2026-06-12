@@ -6,14 +6,14 @@
 // ============================================================
 const RESULTADOS = [
   // ---- Grupo A ----
-  {g:"A", j:1, A:"México", B:"Sudáfrica", ga:null, gb:null},
-  {g:"A", j:1, A:"Corea del Sur", B:"Chequia", ga:null, gb:null},
+  {g:"A", j:1, A:"México", B:"Sudáfrica", ga:2, gb:0},
+{g:"A", j:1, A:"Corea del Sur", B:"Chequia", ga:2, gb:1},
   {g:"A", j:2, A:"México", B:"Corea del Sur", ga:null, gb:null},
   {g:"A", j:2, A:"Chequia", B:"Sudáfrica", ga:null, gb:null},
   {g:"A", j:3, A:"Chequia", B:"México", ga:null, gb:null},
   {g:"A", j:3, A:"Sudáfrica", B:"Corea del Sur", ga:null, gb:null},
   // ---- Grupo B ----
-  {g:"B", j:1, A:"Canadá", B:"Bosnia", ga:null, gb:null},
+  {g:"B", j:1, A:"Canadá", B:"Bosnia", ga:1, gb:1},
   {g:"B", j:1, A:"Qatar", B:"Suiza", ga:null, gb:null},
   {g:"B", j:2, A:"Canadá", B:"Qatar", ga:null, gb:null},
   {g:"B", j:2, A:"Suiza", B:"Bosnia", ga:null, gb:null},
