@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Predictor de marcadores del Mundial 2026 — enfrenta a cualquier selección</title>
+<meta name="description" content="Predictor interactivo del Mundial 2026: elige dos selecciones y descubre el marcador más probable, probabilidades de victoria y los 5 resultados más posibles.">
+<link rel="canonical" href="https://TU-DOMINIO.com/predictor.html">
+<meta property="og:title" content="Predictor de marcadores del Mundial 2026 — enfrenta a cualquier selección">
+<meta property="og:description" content="Predictor interactivo del Mundial 2026: elige dos selecciones y descubre el marcador más probable, probabilidades de victoria y los 5 resultados más posibles.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="css/style.css">
+<!-- AdSense: pega aquí el script global de tu cuenta (ca-pub-XXXXXXXX) -->
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow display">Copa del Mundo · EE.UU. · México · Canadá · 2026</div>
+    <h1 class="display">Analizador <span>Especulativo</span> de Marcadores</h1>
+    <div class="tag">Probabilidades y marcadores proyectados con modelo estadístico · Sitio informativo independiente</div>
+    <div class="tag" id="live-status" style="color:var(--gold);font-size:12px;margin-top:4px"></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="predictor.html" class="active">Predictor</a>
+      <a href="index.html#grupos">Grupos</a>
+      <a href="eliminatorias.html">Eliminatorias</a>
+      <a href="resultados.html">Resultados</a>
+      <a href="privacidad.html">Privacidad</a>
+    </nav>
+  </div>
+</header>
+<main><div class="wrap">
+
+<div class="card">
+  <h2>Predictor de marcadores</h2>
+  <p>Elige dos selecciones y el modelo calculará el marcador más probable, las probabilidades de victoria, empate y derrota, y los cinco resultados con mayor probabilidad.</p>
+  <div class="vsrow">
+    <select id="selA"><option value="Alemania">Alemania</option><option value="Arabia Saudita">Arabia Saudita</option><option value="Argelia">Argelia</option><option value="Argentina">Argentina</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Bosnia">Bosnia</option><option value="Brasil">Brasil</option><option value="Bélgica">Bélgica</option><option value="Cabo Verde">Cabo Verde</option><option value="Canadá">Canadá</option><option value="Chequia">Chequia</option><option value="Colombia">Colombia</option><option value="Corea del Sur">Corea del Sur</option><option value="Costa de Marfil">Costa de Marfil</option><option value="Croacia">Croacia</option><option value="Curazao">Curazao</option><option value="Ecuador">Ecuador</option><option value="Egipto">Egipto</option><option value="Escocia">Escocia</option><option value="España">España</option><option value="Estados Unidos">Estados Unidos</option><option value="Francia">Francia</option><option value="Ghana">Ghana</option><option value="Haití">Haití</option><option value="Inglaterra">Inglaterra</option><option value="Irak">Irak</option><option value="Irán">Irán</option><option value="Japón">Japón</option><option value="Jordania">Jordania</option><option value="Marruecos">Marruecos</option><option value="México">México</option><option value="Noruega">Noruega</option><option value="Nueva Zelanda">Nueva Zelanda</option><option value="Panamá">Panamá</option><option value="Paraguay">Paraguay</option><option value="Países Bajos">Países Bajos</option><option value="Portugal">Portugal</option><option value="Qatar">Qatar</option><option value="RD Congo">RD Congo</option><option value="Senegal">Senegal</option><option value="Sudáfrica">Sudáfrica</option><option value="Suecia">Suecia</option><option value="Suiza">Suiza</option><option value="Turquía">Turquía</option><option value="Túnez">Túnez</option><option value="Uruguay">Uruguay</option><option value="Uzbekistán">Uzbekistán</option></select>
+    <div class="vs display">VS</div>
+    <select id="selB"><option value="Alemania">Alemania</option><option value="Arabia Saudita">Arabia Saudita</option><option value="Argelia">Argelia</option><option value="Argentina">Argentina</option><option value="Australia">Australia</option><option value="Austria">Austria</option><option value="Bosnia">Bosnia</option><option value="Brasil">Brasil</option><option value="Bélgica">Bélgica</option><option value="Cabo Verde">Cabo Verde</option><option value="Canadá">Canadá</option><option value="Chequia">Chequia</option><option value="Colombia">Colombia</option><option value="Corea del Sur">Corea del Sur</option><option value="Costa de Marfil">Costa de Marfil</option><option value="Croacia">Croacia</option><option value="Curazao">Curazao</option><option value="Ecuador">Ecuador</option><option value="Egipto">Egipto</option><option value="Escocia">Escocia</option><option value="España">España</option><option value="Estados Unidos">Estados Unidos</option><option value="Francia">Francia</option><option value="Ghana">Ghana</option><option value="Haití">Haití</option><option value="Inglaterra">Inglaterra</option><option value="Irak">Irak</option><option value="Irán">Irán</option><option value="Japón">Japón</option><option value="Jordania">Jordania</option><option value="Marruecos">Marruecos</option><option value="México">México</option><option value="Noruega">Noruega</option><option value="Nueva Zelanda">Nueva Zelanda</option><option value="Panamá">Panamá</option><option value="Paraguay">Paraguay</option><option value="Países Bajos">Países Bajos</option><option value="Portugal">Portugal</option><option value="Qatar">Qatar</option><option value="RD Congo">RD Congo</option><option value="Senegal">Senegal</option><option value="Sudáfrica">Sudáfrica</option><option value="Suecia">Suecia</option><option value="Suiza">Suiza</option><option value="Turquía">Turquía</option><option value="Túnez">Túnez</option><option value="Uruguay">Uruguay</option><option value="Uzbekistán">Uzbekistán</option></select>
+  </div>
+</div>
+<div class="card" id="result-card">
+  <div id="scoreboard"></div>
+  <div id="probbar"></div>
+  <div class="stat-row" id="stats"></div>
+</div>
+<div class="ad-slot"><!-- AdSense: pega aquí tu bloque <ins class="adsbygoogle"> -->Espacio publicitario</div>
+<div class="card">
+  <h2>Top 5 marcadores probables</h2>
+  <div id="topscores"></div>
+</div>
+<div class="ad-slot"><!-- AdSense: pega aquí tu bloque <ins class="adsbygoogle"> -->Espacio publicitario</div>
+<script>
+function flag(t){return TEAMS[t].f}
+function run(){
+  const A=document.getElementById('selA').value, B=document.getElementById('selB').value;
+  const card=document.getElementById('result-card');
+  if(A===B){card.style.opacity=.4;return} card.style.opacity=1;
+  const p=predictMatch(A,B);
+  document.getElementById('scoreboard').innerHTML=
+    `<div class="scoreboard"><div class="row">
+      <div class="team" style="text-align:right"><div class="flag">${flag(A)}</div><div class="display">${A}</div></div>
+      <div class="digit">${p.best.a}</div><div style="color:var(--dim);font-size:22px">–</div><div class="digit">${p.best.b}</div>
+      <div class="team" style="text-align:left"><div class="flag">${flag(B)}</div><div class="display">${B}</div></div>
+    </div>
+    <p class="muted" style="margin-top:8px">xG esperados: ${p.xa.toFixed(2)} – ${p.xb.toFixed(2)} · Probabilidad de este marcador: ${(p.best.p*100).toFixed(1)}%</p></div>`;
+  document.getElementById('probbar').innerHTML=
+    `<div class="barlabels"><span>${A} ${(p.pW*100).toFixed(0)}%</span><span>Empate ${(p.pD*100).toFixed(0)}%</span><span>${B} ${(p.pL*100).toFixed(0)}%</span></div>
+     <div class="bar"><div style="width:${p.pW*100}%;background:var(--green)"></div><div style="width:${p.pD*100}%;background:var(--dim)"></div><div style="width:${p.pL*100}%;background:var(--red)"></div></div>`;
+  document.getElementById('stats').innerHTML=
+    `<div class="stat"><div class="l">+2.5 goles</div><div class="v">${(p.over25*100).toFixed(0)}%</div></div>
+     <div class="stat"><div class="l">Ambos anotan</div><div class="v">${(p.btts*100).toFixed(0)}%</div></div>`;
+  document.getElementById('topscores').innerHTML=p.top.map((s,i)=>
+    `<div class="scoreline"><div class="sc" style="color:${i===0?'var(--gold)':'var(--chalk)'}">${s.a} – ${s.b}</div>
+     <div class="track"><div class="fill" style="width:${(s.p/p.top[0].p)*100}%;background:${i===0?'var(--gold)':'var(--dim)'}"></div></div>
+     <div class="pct">${(s.p*100).toFixed(1)}%</div></div>`).join('');
+}
+document.addEventListener('DOMContentLoaded',()=>{
+  document.getElementById('selA').value='México';
+  document.getElementById('selB').value='Sudáfrica';
+  document.getElementById('selA').addEventListener('change',run);
+  document.getElementById('selB').addEventListener('change',run);
+  run();
+});
+</script>
+</div></main>
+<footer>
+  <div class="wrap">
+    Sitio informativo y recreativo independiente. Las predicciones son estimaciones estadísticas, no garantías ni consejo de apuestas.<br>
+    Este sitio no está afiliado a la FIFA ni a ninguna federación. No promueve ni facilita apuestas deportivas.<br>
+    <a href="privacidad.html">Política de privacidad y cookies</a>
+  </div>
+</footer>
+<div id="cookie-banner"><div class="inner">
+  <p>Este sitio usa cookies para mostrar publicidad y analizar el tráfico. Al continuar navegando aceptas su uso. <a href="privacidad.html">Más información</a>.</p>
+  <button class="btn" id="cookie-accept">Aceptar</button>
+</div></div>
+<script src="js/resultados.js"></script>
+<script src="js/model.js"></script>
+</body>
+</html>
